@@ -7,9 +7,10 @@
 ---
 ```bash
 AWS Amplify hosted : https://main.d1z791d5ka60q4.amplifyapp.com/
-Netlify Link : https://reqresapi.netlify.app/
+
 ```
 ```bash
+Netlify Link : https://reqresapi.netlify.app/
 Project repository : https://github.com/archit7820/Reqres_assignment/
 
 ```
