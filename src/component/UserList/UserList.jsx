@@ -155,7 +155,10 @@ const UserList = () => {
       </div>
 
       {loading ? (
-        <div>Loading...</div>
+        <div className="loading_spinner">
+  <div className="spinner_circle"></div>
+</div>
+
       ) : (
         <>
           <div className="list_users_containers">

@@ -5,6 +5,7 @@
     font-family: 'Inter', sans-serif;
     background-color:#ffffff;
  }
+
 .form_container{
     flex: 4;
     min-width: 25%;
@@ -18,7 +19,7 @@ padding-top: 8rem;
 .terms_login{
     display: flex;
     flex-direction: column;
-    gap :0.5rem ;
+    gap :01rem ;
 }
 .form_input_section{
     display: flex;
@@ -27,8 +28,9 @@ padding-top: 8rem;
 }
 .login_headline{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 500;
+
     color: black ;     
  }
 .create_account{
@@ -230,19 +232,28 @@ padding-top: 8rem;
 @media (max-width: 650px) {
 .image_container{
     display: none ;
+
 }
 .form_container{
     padding: 2rem;
-    padding-top: 8rem;
+  
+ 
 }
 .login_headline{
-    font-size:1.8rem;
+
+    font-size:1.5rem;
+    font-weight: 400;
 }
 .login_container{
   display: flex;
   height: 100vh;
   font-family: 'Inter', sans-serif;
   background-color:#ffffff;
+}
+.logo_mobile_login{
+  width: 40px;
+  height: 40px;
+  margin-bottom: 3rem;
 }
 }
   

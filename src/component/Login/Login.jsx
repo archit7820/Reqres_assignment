@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
@@ -135,8 +135,28 @@ const Login = () => {
       }
     }
   };
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust the width threshold as needed
+    };
+
+    // Run on component mount
+    handleResize();
+
+    // Add window resize listener
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="login_container">
+     
+
       <div className="image_container">       
         {images.map((image, index) => (
           <div
@@ -160,12 +180,18 @@ const Login = () => {
         ))}
       </div>
       <div className="form_container">
+
+      <div className="logo_navbar">
+  {isMobile && (
+    <img className="logo_mobile_login" src="/mobile_logo.svg" alt="Mobile Logo" />
+  )}
+    </div>
         <div className="login_headline">
           Welcome Back to <spans style={{ color: "#168700" }} >ReqRes!</spans>
           <div className="create_account" style={{ textShadow :"none"}}>
             New to ReqRes?{" "}
             <span>
-              <Link to="/create_user" style={{ color: "#168700"}}>
+              <Link to="/create_user" style={{ color: "#168700" , fontWeight :"500"}}>
                 Create your account
               </Link>
             </span>
