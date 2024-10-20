@@ -44,10 +44,12 @@ const UserList = () => {
 
   const handleNextPage = () => {
     setCurrentPage((prevPage) => (prevPage < 2 ? prevPage + 1 : prevPage));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handlePreviousPage = () => {
     setCurrentPage((prevPage) => (prevPage > 1 ? prevPage - 1 : prevPage));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleEditClick = (user) => {
@@ -147,7 +149,7 @@ const UserList = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
           className="search_input"
         />
-        <span className="search_icon">
+        <span className="search_icon" onClick={() => document.querySelector('.search_input').focus()}>
           <img src="/Search.svg" alt="Search" />
         </span>
       </div>
@@ -179,35 +181,41 @@ const UserList = () => {
           </div>
 
           <div className="pagination_section">
-            <button
-              className="pagination_button"
-              onClick={handlePreviousPage}
-              disabled={currentPage === 1}
-            >
-              Previous
-            </button>
+  <button
+    className="pagination_button"
+    onClick={handlePreviousPage}
+    disabled={currentPage === 1}
+  >
+    Previous
+  </button>
 
-            <span
-              className={`page_number ${currentPage === 1 ? "active_page" : ""}`}
-              onClick={() => setCurrentPage(1)}
-            >
-              1
-            </span>
-            <span
-              className={`page_number ${currentPage === 2 ? "active_page" : ""}`}
-              onClick={() => setCurrentPage(2)}
-            >
-              2
-            </span>
+  <span
+    className={`page_number ${currentPage === 1 ? "active_page" : ""}`}
+    onClick={() => {
+      setCurrentPage(1);
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top when clicking page number
+    }}
+  >
+    1
+  </span>
+  <span
+    className={`page_number ${currentPage === 2 ? "active_page" : ""}`}
+    onClick={() => {
+      setCurrentPage(2);
+      window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to top when clicking page number
+    }}
+  >
+    2
+  </span>
 
-            <button
-              className="pagination_button"
-              onClick={handleNextPage}
-              disabled={currentPage === 2}
-            >
-              Next
-            </button>
-          </div>
+  <button
+    className="pagination_button"
+    onClick={handleNextPage}
+    disabled={currentPage === 2}
+  >
+    Next
+  </button>
+</div>
 
           {editingUser && (
             <div className="modal_overlay">

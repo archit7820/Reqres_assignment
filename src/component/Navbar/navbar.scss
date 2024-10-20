@@ -13,7 +13,7 @@
   }
   
   .logo_navbar {
-    margin-top: 0.3rem;
+    margin-top: 0.5rem;
     font-size: 24px;
     font-weight: bold;
   }
@@ -27,6 +27,10 @@
   
   .menu-button {
     cursor: pointer;
+  }
+  .logo_mobile{
+    width: 30px;
+    height: 30px;
   }
   
   .circle {
@@ -48,7 +52,7 @@
   .dropdown-menu {
     display: flex;
     flex-direction: column;
-    gap : 0.1rem ;
+    gap : 0.3rem ;
     position: absolute;
     right: 30px;
     top: 50px;
@@ -98,7 +102,7 @@
 .dropdown-menu {
   display: flex;
   flex-direction: column;
-  gap : 0.1rem ;
+
   position: absolute;
   right: 20px;
   top: 55px;

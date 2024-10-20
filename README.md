@@ -1,74 +1,60 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Assignement 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Description**: This project is a web application built using React that provides users with a seamless experience for fetching user data from the API (https://reqres.in/). It also allows users to log in, create accounts using specified credentials, and view a list of users in card form, also use client-side searching enabled search bar ,with features for adding and deleting users. The application is responsive and works on both mobile and web platforms. 
 
-## Available Scripts
+. The application includes features like routing, API fetching, notifications, and responsive design.
 
-In the project directory, you can run:
+---
+```bash
+Project Link : https://reqresapi.netlify.app/
+```
+```bash
+Project repository : https://github.com/archit7820/Reqres_assignment/
 
-### `npm start`
+```
+### Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To install the project dependencies, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Clone the repository**:
+    ```bash
+           https://github.com/archit7820/Reqres_assignment.git
+    ```
+2. **Navigate to the project directory**:
+    ```bash
+    cd Reqres_assignment
+    ```
+3. **Install dependencies**:
+    Run the following command to install the required packages:
+    ```bash
+    npm install react-router-dom sass axios react-toastify react-scripts
+    ```
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Running the Project
 
-### `npm run build`
+To run the project locally, use the following command:
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Dependencies
+The project relies on the following dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+react-router-dom: For routing within the application.
+sass: For CSS styling.
+axios: To fetch data from APIs.
+react-toastify: For displaying notifications.
+react-scripts: To manage the project lifecycle and scripts.
+Make sure to check the package.json file for the complete list of dependencies.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Assumptions and Considerations
+The project is designed to run on Node.js version Node.js v20.8.0.
+Ensure you have an active internet connection to fetch the required packages.
+The application assumes a specific API structure; any changes to the API may require adjustments in the application code.
+The application is built with responsiveness in mind and should work on most devices
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# Reqres_assignment
->>>>>>> bc0c00966b444ed29346564f1d98ce7c48728774

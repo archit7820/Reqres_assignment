@@ -11,6 +11,7 @@
 .search_user{
     position: relative;
     display: flex;
+  
     flex-direction: column;
     width: 50%;
 }
@@ -22,9 +23,9 @@
     outline: none;
 }
 .list_users_containers {
-   
-    display: grid;
-     grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
+  
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
       gap: 4rem  ;
       align-items: center;
       box-sizing: border-box;
@@ -50,10 +51,10 @@
     border: 1px solid #9f9e9e;
     padding: 1rem;
     box-sizing: border-box;
-    
+    width: 100%;
     border-radius: 10px;
     gap: 2rem;
-    max-width:  300px;
+ 
     cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
@@ -227,7 +228,7 @@ input {
 
     .user_list_container{
         gap : 2rem ;
-        padding: 2rem;    
+        padding: 3rem;    
     }
     .container_markup{
         display: flex;

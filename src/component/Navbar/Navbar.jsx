@@ -37,7 +37,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo_navbar"> {isMobile ? (
-        <img src="/mobile_logo.svg" alt="Mobile Logo" />
+        <img className='logo_mobile' src="/mobile_logo.svg" alt="Mobile Logo" />
       ) : (
         <img src="/navabar_logo.svg" alt="Web Logo" />
       )}</div>
