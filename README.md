@@ -1,4 +1,4 @@
-# Project Title
+# Assignement 
 
 **Description**: This project is a web application built using React that provides users with a seamless experience for fetching user data from the API (https://reqres.in/). It also allows users to log in, create accounts using specified credentials, and view a list of users in card form, also use client-side searching enabled search bar ,with features for adding and deleting users. The application is responsive and works on both mobile and web platforms. 
 
@@ -7,6 +7,8 @@
 ---
 ```bash
 Project Link : https://reqresapi.netlify.app/
+```
+```bash
 Project repository : https://github.com/archit7820/Reqres_assignment/
 
 ```
@@ -38,9 +40,9 @@ npm start
 ```
 
 
-```bash
 
-Dependencies
+
+### Dependencies
 The project relies on the following dependencies:
 
 react-router-dom: For routing within the application.
@@ -55,4 +57,4 @@ The project is designed to run on Node.js version Node.js v20.8.0.
 Ensure you have an active internet connection to fetch the required packages.
 The application assumes a specific API structure; any changes to the API may require adjustments in the application code.
 The application is built with responsiveness in mind and should work on most devices
-```
+
